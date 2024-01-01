@@ -12,6 +12,10 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+button {
+  background-color: none;
+}
+
 @layer utilities {
   .nav-link {
     @apply text-zinc-500 hover:text-zinc-800 transition-colors;
