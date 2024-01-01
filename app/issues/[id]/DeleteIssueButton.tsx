@@ -31,7 +31,12 @@ const DeleteIssueButton = ({ issueId }: Props) => {
     <>
       <AlertDialog.Root>
         <AlertDialog.Trigger>
-          <Button variant="solid" color="red" disabled={isDeleting}>
+          <Button
+            variant="solid"
+            color="red"
+            className="bg-red-500"
+            disabled={isDeleting}
+          >
             <TrashIcon width={20} height={20} />
             Delete Issue {isDeleting && <Spinner />}
           </Button>
@@ -50,7 +55,12 @@ const DeleteIssueButton = ({ issueId }: Props) => {
               </Button>
             </AlertDialog.Cancel>
             <AlertDialog.Action>
-              <Button variant="solid" color="red" onClick={deleteIssue}>
+              <Button
+                variant="solid"
+                color="red"
+                className="bg-red-500"
+                onClick={deleteIssue}
+              >
                 Delete Issue
               </Button>
             </AlertDialog.Action>
